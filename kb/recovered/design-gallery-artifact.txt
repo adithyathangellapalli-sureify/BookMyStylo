@@ -1,0 +1,1117 @@
+ 
+ Snipbook — Design System & Screen Gallery 
+ Snipbook 
+ 🌙 Dark 
+ Snipbook 
+ Design system & screen gallery
+ Every screen of the locality-based saloon booking platform — the customer app, the partner dashboard, and the super-admin console — rebuilt from the shared teal-palette design system. Light and dark themes throughout.
+ Customer 
+ Partner 
+ Super admin 
+ Reconstructed faithfully from the shipped design system in packages/ui/src/design.css and the app screens in apps/client-app / apps/server-app . Tokens, component classes, and both themes match the code the apps render today.
+ Contents
+ Foundations 
+ Customer app 
+ Partner app 
+ Super-admin console 
+ ★ Stylist picker — options 
+ ★ Stylist info & rating 
+ ★ Rate your visit 
+ ★ Online payment (auto-confirm) 
+ 01 · Foundations 
+ The design system
+ One teal palette, a Georgia serif for headlines paired with the system sans, and a set of component primitives shared by all three apps. Colour is tokenised, so every screen below re-themes from these same variables.
+ Palette
+ Neutrals lean teal rather than grey. Semantic colours (available / booked / held / leave / closed) encode booking & slot state and are separate from the brand accent. Toggle the theme (top-right) to see every token shift.
+ Accent
+ --accent
+ Accent 2
+ --accent-2
+ Accent soft
+ --accent-soft
+ Ground
+ --ground
+ Surface
+ --surface
+ Surface 2
+ --surface-2
+ Ink
+ --ink
+ Ink 3
+ --ink-3
+ Available
+ --available
+ Booked
+ --booked
+ Held / frozen
+ --frozen
+ Leave
+ --leave
+ Closed
+ --closed
+ Typography & buttons
+ Type scale
+ Book a stylist near you
+ Section heading
+ Uppercase label 
+ Body strong · 14px
+ Sub / lede text in muted ink for supporting copy.
+ Muted caption text.
+ Fine print / note text.
+ ₹1,200
+ Buttons
+ Primary 
+ Success · Accept 
+ Ghost 
+ Danger 
+ Small 
+ Dark 
+ Disabled 
+ Components
+ Status badges & pills
+ Pending 
+ Accepted 
+ In service 
+ Done 
+ Rejected 
+ On leave 
+ Chip select & segmented
+ ✓ Haircut 
+ Beard trim 
+ Hair colour 
+ Pending 3 
+ Live 18 
+ Suspended 1 
+ Slot states & legend
+ 10:00 AM 
+ 10:30 AM 
+ 11:00 AM 
+ 11:30 AM 
+ 12:00 PM 
+ 12:30 PM 
+ Open 
+ Booked 
+ Held 
+ Past 
+ KPI tiles
+ Today's bookings
+ 12
+ 4 upcoming
+ Earned today
+ ₹4,150
+ 7 paid
+ Chairs
+ 3 / 3
+ 3 staff
+ Fields, OTP & callout
+ +91 98765 43210 
+ 4 1 9 
+ · · · 
+ 💡 You'll pay only once the saloon accepts. Cash is the default.
+ Both themes, one system
+ The same login card, rendered light and dark from the token set — no separate stylesheet. Every screen in this gallery re-themes the same way.
+ Light 
+ Snipbook
+ Book a stylist near you.
+ Mobile number 
+ +91 98765 43210 
+ Send OTP 
+ New here? Create an account 
+ Dark 
+ Snipbook
+ Book a stylist near you.
+ Mobile number 
+ +91 98765 43210 
+ Send OTP 
+ New here? Create an account 
+ 02 · Customer 
+ Customer app
+ A mobile-first booking flow: discover saloons by locality, pick services and a stylist, hold a slot, request the booking, then track it and pay by cash or UPI. OTP login, no passwords.
+ Login — mobile number entry 
+ Snipbook
+ Book a stylist near you.
+ Mobile number 
+ +91 98765 43210 
+ Send OTP 
+ New here? Create an account 
+ Login — OTP verify 
+ Snipbook
+ Verify your number
+ Code sent to +91 98765 43210 · Edit 
+ Dev code: 419273 
+ 4 1 9 
+ 2 7 3 
+ Verify & continue 
+ Sign up — create account 
+ Snipbook
+ Create your account.
+ Your name 
+ Mobile number 
+ +91 98765 43210 
+ Sign up 
+ Already have an account? Log in 
+ Discover — browse saloons by locality 
+ Snipbook 
+ PN 
+ Location 
+ 📍 Indiranagar ▾ 
+ Show 
+ Available 
+ All saloons 
+ 3 saloons near you
+ Indiranagar, Bengaluru
+ ✂️ Demo Cuts Indiranagar · 3 stylists
+ 4 services From ₹150 
+ ✂️ The Gentleman's Cut Indiranagar · 2 stylists
+ 3 services From ₹200 
+ ✂️ Fade Factory Indiranagar · 4 stylists
+ Not bookable yet 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ Discover — empty state 
+ Snipbook 
+ PN 
+ Location 
+ 📍 Jayanagar ▾ 
+ Show 
+ Available 
+ All saloons 
+ Saloons near you
+ Jayanagar, Bengaluru
+ 🗺️
+ No saloons in Jayanagar yet
+ We're just getting started here. Try a nearby area, or check back soon.
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ Shop — pick services, day & a slot (held for you) 
+ Snipbook 
+ PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar, Bengaluru
+ Choose services 
+ ✓ Haircut ₹300 
+    Beard trim ₹150 
+    Head massage ₹250 
+ Pick a day 
+ Today 
+ Tue, 26 Aug 
+ Wed, 27 Aug 
+ Thu, 28 Aug 
+ Pick a stylist & time 
+ ✨ Any 
+ 💇 Sam ★4.9 
+ 💇 Priya ★4.7 
+ 💇 Arjun ★4.8 
+ 💇 
+ Sam ★ 4.9 · 214 
+ 8 yrs experience
+ Skin fades & sharp beard sculpting — precise, quick, great with classic cuts.
+ Fades Beard Classic cut 
+ 6 open slots today
+ 10:00 10:30 11:00 11:30 
+ 12:00 12:30 1:00 1:30 
+ Open 
+ Booked 
+ Held 
+ ₹300
+ ⏳ Time reserved · 4:52 left — tap Request booking
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ Confirmation — booking requested 
+ Snipbook 
+ PN 
+ ✓
+ Booking requested!
+ Waiting for the saloon to accept. You'll get a text.
+ Saloon Demo Cuts 
+ Stylist · Time Sam · 11:00 AM 
+ Services Haircut 
+ Amount ₹300 
+ 💡 You'll pay only once the saloon accepts. Cash is the default — switch to online any time from My Bookings.
+ View my bookings 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ My bookings — upcoming & past 
+ Snipbook 
+ PN 
+ My bookings
+ Tap a booking to track it.
+ Upcoming 
+ Demo Cuts Sam · Today 11:00 AM
+ Accepted 
+ 💵 Paying by cash (default) ₹300 
+ The Gentleman's Cut Ravi · Wed, 27 Aug 4:30 PM
+ Pending 
+ Payment starts once accepted ₹450 
+ Past 
+ Demo Cuts Sam · Mon, 18 Aug 10:30 AM
+ Done 
+ Paid · Online ₹550 
+ Fade Factory Arjun · Sat, 9 Aug 6:00 PM
+ Cancelled 
+ 💵 Paying by cash (default) ₹300 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ Booking detail — live status tracker 
+ Snipbook 
+ PN 
+ ‹ My bookings 💬 
+ Demo Cuts
+ Today · 11:00 AM · Sam
+ ACCEPTED 
+ Accepted! Arrive at your time — pay by cash or online.
+ 📍
+ Demo Cuts · Chair 1
+ Progress 
+ ✓
+ Requested
+ You sent the booking request
+ 2
+ Accepted
+ Saloon confirmed your stylist & time
+ 3
+ In service
+ You're in the chair
+ 4
+ Completed
+ Service finished
+ Booking details 
+ Saloon Demo Cuts 
+ Stylist Sam 
+ Time Today · 11:00 AM–11:30 AM 
+ Services Haircut 
+ Total ₹300 
+ Pay ₹300 online 
+ Cancel booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ UPI pay sheet — scan-to-pay, self-confirm 
+ Snipbook 
+ PN 
+ ‹ My bookings 💬 
+ Demo Cuts
+ Today · 11:00 AM · Sam
+ Pay by UPI Close 
+ Scan with any UPI app
+ Pay to Demo Cuts 
+ UPI ID democuts@okaxis 
+ Amount ₹300 
+ Open UPI app 
+ I've paid — confirm 
+ Confirm only once your UPI app shows the payment as successful — the saloon sees it as paid immediately.
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ Support — live chat with the admin 
+ Snipbook 
+ PN 
+ ‹ My bookings 💬 
+ Support Open Close 
+ You · 21 Aug, 2:14 PM I was charged but the booking still shows unpaid — can you check?
+ Admin · 21 Aug, 2:20 PM Hi Priya! I can see the payment landed. Marking it paid now — sorry for the scare.
+ You · 21 Aug, 2:21 PM Perfect, thank you!
+ Send 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ Profile — account summary 
+ Snipbook 
+ PN 
+ Profile
+ Your Snipbook account.
+ PN
+ Priya Nair
+ Customer 
+ Mobile number +91 98765 43210 
+ Bookings 4 total · 2 upcoming 
+ View my bookings 
+ Log out 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ 03 · Partner 
+ Partner app
+ Shop owners onboard through a six-step wizard, then run the shop from a desktop dashboard: accept booking requests, manage chairs & team, set hours and leave, and track earnings by stylist. Staff see a trimmed view of the same shell.
+ Onboarding (mobile)
+ OTP login, then a guided six-step registration wizard — shop details, team, services, prices, payment, and a final review before going live. apps/server-app/src/pages/{Login,Register}Page.tsx 
+ Partner login 
+ Snipbook Partner 
+ Manage your saloon.
+ Mobile number 
+ +91 99900 00001 
+ Send OTP 
+ New partner? Create an account 
+ Register — step 1 · shop details 
+ Step 1 of 6 
+ Shop details
+ Tell customers what to look for.
+ Shop name 
+ Number of chairs 
+ – 2 + 
+ City / locality 
+ Indiranagar, Bengaluru ▾ 
+ Continue 
+ Register — step 4 · your prices 
+ ‹ Back Step 4 of 6 
+ Your prices
+ Set what you charge — shown to customers.
+ Haircut ₹ 300 
+ Beard trim ₹ 150 
+ Hair colour ₹ 1,200 
+ Prices are per-shop — every shop can set its own.
+ Continue 
+ Register — step 6 · review & go live 
+ ‹ Back Step 6 of 6 
+ Review & go live
+ Shop 
+ The Gentleman's Cut · Indiranagar · 2 chairs
+ Team 
+Ravi Kumar (Admin), Sam
+ Services 
+Haircut ₹300 · Beard trim ₹150 · Hair colour ₹1,200
+ Payment 
+UPI gentlemanscut@okaxis + cash
+ Finish & open Dashboard 
+ Dashboard (desktop)
+ The partner dashboard: greeting, KPIs, incoming booking requests to accept or reject, and the day's schedule. Auto-approve is a per-shop toggle. apps/server-app/src/pages/DashboardPage.tsx 
+ partner.snipbook.app
+ Partner
+ ◱ Dashboard 💺 Chairs 📅 Schedule 💰 Earnings 👤 Profile 
+ RK 
+ Demo Cuts 
+ Good morning, Ravi 👋
+ Indiranagar, Bengaluru · Today
+ Auto-approve bookings You accept each booking manually (default).
+ Today's bookings
+ 6
+ 2 upcoming
+ Earned today
+ ₹1,350
+ 3 paid
+ Chairs
+ 3 / 3
+ 3 staff
+ 🔔 Booking requests 2 pending 
+ Chair 1 Haircut + Beard trim · Chair 1 · 11:00 AM
+ ₹450 
+ Accept Reject 
+ Chair 2 Hair colour · Chair 2 · 1:30 PM
+ ₹1,200 
+ Accept Reject 
+ Today Tue, 26 Aug Wed, 27 Aug Thu, 28 Aug 
+ Schedule 
+ 10:00 AM · Chair 1 Sam · Haircut
+ In service ₹300
+ Cash on visit
+ Collect ₹300 cash No-show 
+ 12:30 PM · Chair 3 Arjun · Head massage
+ Accepted ₹250
+ Online
+ Actions unlock at the appointment time (12:30 PM).
+ 9:00 AM · Chair 2 Priya · Haircut
+ Done ₹300
+ Paid · Cash
+ Chairs & team
+ Add or remove chairs, assign a stylist to each, and manage the team roster. Each stylist now has an editable experience & speciality profile that shows on the customer's booking screen. Admin-only. apps/server-app/src/pages/ChairsPage.tsx 
+ partner.snipbook.app/chairs
+ Partner
+ ◱ Dashboard 💺 Chairs 📅 Schedule 💰 Earnings 👤 Profile 
+ RK 
+ Chairs & team
+ Demo Cuts · 3 chairs · 3 people
+ Chairs ＋ Add chair 
+ SA Chair 1 Sam
+ Sam ▾ 
+ ✕ 
+ PR Chair 2 Priya
+ Priya ▾ 
+ ✕ 
+ ＋ Chair 3 Unassigned
+ Unassigned ▾ 
+ ✕ 
+ Team 
+ RK Ravi Kumar ★ Admin +91 99900 00001 · Chair 1
+ SA Sam +91 99900 00002 · Chair 1
+ Remove 
+ PR Priya +91 99900 00003 · Chair 2
+ Remove 
+ ＋ Add person 
+ Stylist profile — Sam ★ 4.9 · 214 
+ Shown to customers on the booking screen. The rating is computed from customer reviews — read-only here.
+ Experience (yrs) 
+ Speciality (one line) 
+ Skills 
+ Fades ✕ Beard ✕ Classic cut ✕ 
+ ＋ Add skill 
+ Unsaved changes to Sam's profile 
+ Discard Save profile 
+ Schedule
+ Opening hours & slot length, weekly days off, holiday closures, and per-staff leave. Settings stage into a sticky save bar. apps/server-app/src/pages/SchedulePage.tsx 
+ partner.snipbook.app/schedule
+ Partner
+ ◱ Dashboard 💺 Chairs 📅 Schedule 💰 Earnings 👤 Profile 
+ RK 
+ Schedule
+ Demo Cuts · Indiranagar, Bengaluru
+ Hours & slot length 
+ Opens 09:00 
+ Closes 20:00 
+ Slot (min) 30 
+ Weekly days off 
+ Sun 
+ Mon Tue Wed Thu Fri Sat 
+ Holiday closures 
+ Date dd / mm / yyyy 
+ Add 
+ Fri, 15 Aug Remove 
+ Thu, 2 Oct Remove 
+ Staff leave 
+ Staff Sam ▾ 
+ From dd/mm/yy 
+ To dd/mm/yy 
+ Add leave 
+ Priya · 27 Aug → 29 Aug Remove 
+ Unsaved changes to hours / days off 
+ Discard Save changes 
+ Earnings
+ Paid-booking totals for the shop and a per-stylist breakdown, ranked, with the signed-in stylist highlighted. apps/server-app/src/pages/EarningsPage.tsx 
+ partner.snipbook.app/earnings
+ Partner
+ ◱ Dashboard 💺 Chairs 📅 Schedule 💰 Earnings 👤 Profile 
+ RK 
+ Earnings
+ Demo Cuts · paid bookings, all time
+ Shop total
+ ₹18,750
+ 42 paid
+ Team
+ 3
+ people
+ You earned
+ ₹7,200
+ 38% of shop
+ By stylist highest first 
+ RK Ravi Kumar You · admin 31 paid bookings
+ ₹7,200 
+ SA Sam 7 paid bookings
+ ₹6,300 
+ PR Priya 4 paid bookings
+ ₹5,250 
+ Partner profile
+ Account & role, shop status, assigned chair — and, for a stylist, a card to self-manage leave that flows straight into the shop schedule. apps/server-app/src/pages/ProfilePage.tsx 
+ partner.snipbook.app/profile
+ Partner
+ ◱ Dashboard 💺 Chairs 📅 Schedule 💰 Earnings 👤 Profile 
+ RK 
+ Profile
+ Your account and role on Snipbook Partner.
+ RK
+ Ravi Kumar
+ Admin 
+ Mobile number +91 99900 00001 
+ Role Admin 
+ Shop Demo Cuts 
+ Locality Indiranagar, Bengaluru 
+ Shop status LIVE 
+ Assigned chair Chair 1 
+ My leave 
+ Mark days you're away — customers can't book your chair then, and it shows in the shop's schedule.
+ From dd/mm/yy 
+ To dd/mm/yy 
+ Add 
+ Mon, 1 Sep → Wed, 3 Sep Remove 
+ Log out 
+ 04 · Super admin 
+ Super-admin console
+ The platform owner's control room — same server app, a different role. Approve or suspend shops, own the global services catalog and city list, and answer support tickets. A collapsing sticky header keeps the tab bar in reach while scrolling.
+ Dashboard
+ Fleet-wide stats and a queue of shops awaiting review. apps/server-app/src/pages/AdminPage.tsx → ConsoleDashboard 
+ console.snipbook.app/admin
+ Console
+ 🏪 Console 👤 Profile 
+ SA 
+ Console
+ 24 shops registered · 3 pending review
+ Super admin 
+ ◱ Dashboard 🏪 Shops ✂️ Services catalog 🏙️ Cities 🆘 Support 
+ Total shops
+ 24
+ 18 live
+ Pending review
+ 3
+ needs action
+ Suspended
+ 1
+ Services
+ 9
+ of 11 active
+ Cities
+ 6
+ localities
+ Open tickets
+ 2
+ needs action
+ 🔔 Pending review 3 Review all → 
+ Shop
+ City
+ Sharp & Co. 
+ Koramangala
+ Pending 
+ Curl & Co. 
+ HSR Layout
+ Pending 
+ Blade Runners 
+ Whitefield
+ Pending 
+ Shop review
+ Shops segregated by status via a segmented control; each list is searchable and paginated. Approve, suspend, or reinstate inline. AdminPage → ShopReview 
+ console.snipbook.app/admin
+ Console
+ 🏪 Console 👤 Profile 
+ SA 
+ Console
+ 24 shops registered · 3 pending review
+ Super admin 
+ ◱ Dashboard 🏪 Shops ✂️ Services catalog 🏙️ Cities 🆘 Support 
+ 🏪 Shop review · by status 
+ Pending review 3 Live 18 Suspended 1 
+ Showing pending review shops only. Switch status above; search & paging apply within this list.
+ Shop
+ City
+ Status
+ Actions
+ Sharp & Co. 
+ Koramangala
+ PENDING 
+ Approve 
+ Curl & Co. 
+ HSR Layout
+ PENDING 
+ Approve 
+ Blade Runners 
+ Whitefield
+ PENDING 
+ Approve 
+ Services catalog & cities
+ The global catalog every shop draws from — toggled active/inactive with a staged save bar — and the master list of cities & localities. AdminPage → ServicesPanel / CitiesPanel 
+ Services catalog 
+ Services catalog 11 total 
+ Add 
+ ✓ Haircut ✓ Beard trim ✓ Hair colour 
+ ✓ Head massage ✓ Shave Kids cut 
+ ✓ Facial Hair spa 
+ Toggle services on or off, then Save. Only active services can be picked by shops.
+ 2 unsaved changes 
+ Discard Save changes 
+ Cities & localities 
+ Cities & localities 6 total 
+ Add 
+ Indiranagar, Karnataka Koramangala, Karnataka HSR Layout, Karnataka 
+ Jayanagar, Karnataka Whitefield, Karnataka Malleshwaram, Karnataka 
+ Support tickets
+ Customer support tickets with a live conversation thread; filter by open / resolved and reply, resolve, or reopen. AdminPage → SupportPanel 
+ console.snipbook.app/admin
+ Console
+ 🏪 Console 👤 Profile 
+ SA 
+ Console
+ 24 shops registered · 3 pending review
+ Super admin 
+ ◱ Dashboard 🏪 Shops ✂️ Services catalog 🏙️ Cities 🆘 Support 
+ Support tickets 2 open 
+ Open Resolved All 
+ PN Priya Nair +91 98765 43210 · Demo Cuts
+ Open 
+ Raised Thu, 21 Aug · booking Thu, 21 Aug 11:00 AM Hide 
+ Priya Nair · 2:14 PM I was charged but the booking still shows unpaid — can you check?
+ You (admin) · 2:20 PM Hi Priya! I can see the payment landed. Marking it paid now.
+ Send 
+ Awaiting resolution Mark resolved 
+ AR Arjun Rao +91 98111 22334 · general
+ Open 
+ Raised Wed, 20 Aug · general Open chat 
+ Awaiting resolution Mark resolved 
+ Mobile view
+ On small screens the console drops the sidebar for a top bar + bottom tab bar; the collapsing header keeps the section tabs in reach, KPIs go two-up, and wide tables scroll horizontally. Same code, responsive. apps/server-app/src/components/Layout.tsx + AdminPage.tsx 
+ Console · Dashboard 
+ Console
+ SA 
+ Console
+ 24 shops · 3 pending
+ Super admin 
+ ◱ Dashboard 🏪 Shops ✂️ Services 🏙️ Cities 🆘 Support 
+ Total shops
+ 24
+ 18 live
+ Pending
+ 3
+ needs action
+ Suspended
+ 1
+ Services
+ 9
+ of 11 active
+ Cities
+ 6
+ localities
+ Open tickets
+ 2
+ needs action
+ 🔔 Pending 3 Review all → 
+ Shop
+ City
+ Sharp & Co. 
+ Koramangala
+ Pending 
+ Curl & Co. 
+ HSR Layout
+ Pending 
+ Blade Runners 
+ Whitefield
+ Pending 
+ 🏪 Console 👤 Profile 
+ Console · Shops 
+ Console
+ SA 
+ Console
+ 24 shops · 3 pending
+ Super admin 
+ ◱ Dashboard 🏪 Shops ✂️ Services 🏙️ Cities 🆘 Support 
+ 🏪 By status 
+ Pending 3 Live 18 Susp. 1 
+ Showing pending shops. Search & paging apply within this list.
+ Shop
+ City
+ Action
+ Sharp & Co. 
+ Koramangala
+ Approve 
+ Curl & Co. 
+ HSR Layout
+ Approve 
+ Blade Runners 
+ Whitefield
+ Approve 
+ 🏪 Console 👤 Profile 
+ Console · Support 
+ Console
+ SA 
+ Console
+ 24 shops · 3 pending
+ Super admin 
+ ◱ Dashboard 🏪 Shops ✂️ Services 🏙️ Cities 🆘 Support 
+ Tickets 2 open 
+ Open Resolved All 
+ PN Priya Nair Demo Cuts
+ Open 
+ Priya · 2:14 PM Charged but booking shows unpaid — can you check?
+ You · 2:20 PM Payment landed — marking it paid now.
+ Send 
+ Awaiting resolution Mark resolved 
+ 🏪 Console 👤 Profile 
+ 05 · Exploration 
+ “Pick a stylist & time” — options
+ Four alternative treatments for the slot picker on the customer Shop screen, next to the current design for comparison. Each is built in the real design system, so what you see is what would ship. Flip the theme (top-right) to check both. Tell me which one to adopt (A / B / C / D) and I'll wire it into apps/client-app/src/pages/ShopPage.tsx .
+ ✓ Finalized: Option A (stylist tabs) — now live in Customer app → Shop above, with the profile card from option 1 below.
+ Current — stylist cards, each a 3-col grid 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a stylist & time 
+ SA Sam 
+ 10:00 AM 10:30 AM 11:00 AM 
+ 11:30 AM 12:00 PM 12:30 PM 
+ PR Priya On leave 
+ Open 
+ Booked 
+ Held 
+ Past 
+ ₹300
+ ⏳ Time reserved · 4:52 left
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ A Stylist tabs — choose who, then a roomy grid 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a stylist & time 
+ ✨ Any 
+ 💇 Sam 
+ 💇 Priya · leave 
+ 💇 Arjun 
+ Sam · 6 open slots today
+ 10:00 10:30 11:00 11:30 
+ 12:00 12:30 1:00 1:30 
+ Open 
+ Booked 
+ Held 
+ ₹300
+ ⏳ Sam · 11:00 AM reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ B Time of day — grouped Morning / Afternoon / Evening 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a time 
+ ✨ Any stylist 
+ Sam 
+ Arjun 
+ ☀️ Morning · 3 open 
+ 9:00 AM 10:00 AM 10:30 AM 11:30 AM 
+ 🌤️ Afternoon · 3 open 
+ 12:00 PM 12:30 PM 1:00 PM 
+ 🌆 Evening · 2 open 
+ 5:00 PM 5:30 PM 
+ ₹300
+ ⏳ 1:00 PM · with Sam reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ C Slot list — one scannable row per open time 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Available times · today 
+ 10:00 AM SA Sam Chair 1
+ › 
+ 10:30 AM PR Priya Chair 2 · reserved for you
+ ✓ 
+ 11:00 AM SA Sam Chair 1
+ › 
+ 11:30 AM AR Arjun Chair 3
+ › 
+ 12:00 PM Fully booked 
+ ₹300
+ ⏳ Priya · 10:30 AM reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ D Schedule lanes — a horizontal timeline per stylist 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a stylist & time 
+ SA Sam 6 open 
+ 10:00 10:30 11:00 
+ 11:30 12:00 12:30 1:00 
+ AR Arjun 4 open 
+ 10:00 10:30 11:00 
+ 11:30 12:00 12:30 
+ PR Priya On leave 
+ Open 
+ Booked 
+ Held 
+ ₹300
+ ⏳ Sam · 11:00 AM reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ How they compare
+ Option
+ Best when…
+ Trade-off
+ A · Stylist tabs 
+ The customer has a preferred stylist
+ One extra tap if they don't care who
+ B · Time of day 
+ Time matters more than the person
+ Needs an “any stylist” → chair resolution
+ C · Slot list 
+ Fewest slots; best accessibility & scan-ability
+ Gets long when there are many open times
+ D · Schedule lanes 
+ Many stylists & slots; a “board” feel
+ Horizontal scroll can hide later times
+ 06 · Exploration 
+ Stylist info — speciality & rating
+ Four ways to surface each stylist's speciality (their skills / what they're best at) and their rating — two built on Option A (stylist tabs, the design you chose) and two on the Current card layout. Sample data only. Note this needs new backend fields: a per-stylist speciality/skills and an aggregate rating + review count (which means a post-visit review step to collect it).
+ ✓ Finalized: Option 1 (Option A + profile card). Partner inputs are in Partner app → Chairs & team ; the customer review flow is in Rate your visit below.
+ 1 Option A + profile card — tabs, then a rich profile for the pick 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a stylist & time 
+ ✨ Any 
+ 💇 Sam ★4.9 
+ 💇 Priya ★4.7 
+ 💇 Arjun ★4.8 
+ 💇 
+ Sam ★ 4.9 · 214 
+ 8 yrs experience
+ Skin fades & sharp beard sculpting — precise, quick, great with classic cuts.
+ Fades Beard Classic cut 
+ 6 open slots today
+ 10:00 10:30 11:00 11:30 
+ 12:00 12:30 1:00 1:30 
+ ₹300
+ ⏳ Sam · 11:00 AM reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ 2 Option A + inline meta — tabs, one compact rating + speciality line 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a stylist & time 
+ ✨ Any 
+ 💇 Sam 
+ 💇 Priya 
+ 💇 Arjun 
+ ★ 4.9 · 214 reviews 
+ Fades & beard sculpting · 8 yrs 
+ 10:00 10:30 11:00 11:30 
+ 12:00 12:30 1:00 1:30 
+ Open 
+ Booked 
+ Held 
+ ₹300
+ ⏳ Sam · 11:00 AM reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ 3 Current + enriched card — rating & skill chips in each card 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a stylist & time 
+ 💇 Sam 8 yrs · fades & beard sculpting
+ ★ 4.9 · 214 
+ Fades Beard Classic cut 
+ 10:00 AM 10:30 AM 11:00 AM 
+ 11:30 AM 12:00 PM 12:30 PM 
+ 💇 Arjun 4 yrs · textured crops & kids' cuts
+ ★ 4.8 · 98 
+ Textured Scissor cut Kids 
+ 10:00 AM 10:30 AM 11:00 AM 
+ 11:30 AM 12:00 PM 12:30 PM 
+ 💇 Priya colour & balayage specialist
+ On leave 
+ ₹300
+ ⏳ Sam · 11:00 AM reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ 4 Current + one-line — lightest: rating + speciality under the name 
+ Snipbook PN 
+ ‹ All saloons 
+ Demo Cuts
+ 📍 Indiranagar · Haircut ₹300
+ Pick a stylist & time 
+ 💇 
+ Sam 
+ ★ 4.9 · Fades & beard sculpting
+ 10:00 AM 10:30 AM 11:00 AM 
+ 11:30 AM 12:00 PM 12:30 PM 
+ 💇 
+ Arjun 
+ ★ 4.8 · Textured crops & kids' cuts
+ 10:00 AM 10:30 AM 11:00 AM 
+ 11:30 AM 12:00 PM 12:30 PM 
+ ₹300
+ ⏳ Sam · 11:00 AM reserved
+ Request booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ How they compare
+ Option
+ Shows
+ Best when
+ 1 · A + profile card 
+ Rating, review count, bio, skill chips, experience
+ You want the stylist to feel like a real profile
+ 2 · A + inline meta 
+ Rating + one speciality line
+ Keep it compact; info without a big card
+ 3 · Current + enriched card 
+ Rating pill + skill chips per stylist card
+ Comparing several stylists at a glance
+ 4 · Current + one-line 
+ Just ★ rating + a short speciality
+ Lightest touch, minimal change
+ Data needed either way: speciality/skills (free text or a tag list per stylist) and an aggregate rating + count — which implies letting customers rate a completed booking. Happy to spec that when you pick a design.
+ 07 · Finalized flow 
+ Rate your visit — customer review
+ After a booking is Completed , the customer can rate the stylist: a star score, optional "what was great" tags, and a note. Submitting updates that stylist's aggregate rating — the same ★ shown on the profile card in the Shop screen. This closes the loop: partners set experience & speciality, customers set the rating.
+ ✓ Rate your visit — on a completed booking 
+ Snipbook PN 
+ ‹ My bookings 💬 
+ Demo Cuts
+ Mon, 18 Aug · 10:30 AM · Sam
+ COMPLETED Service complete. Thanks for using Snipbook!
+ 💇 How was Sam? 
+ ★ ★ ★ ★ ★ 
+ What was great? 
+ ✓ Fades Beard ✓ On time Friendly Value 
+ Add a note (optional) 
+ Submit review 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ ✓ Review posted — reflected in the stylist's rating 
+ Snipbook PN 
+ ‹ My bookings 💬 
+ Demo Cuts
+ Mon, 18 Aug · 10:30 AM · Sam
+ Your review Posted Edit 
+ 💇 Sam ★★★★ ★ 
+ Fades On time 
+ “Cleanest fade I've had in ages — in and out in 20 minutes.”
+ Thanks! Your review updated Sam's rating to ★ 4.9 from 215 reviews.
+ Demo Cuts Sam · Mon, 18 Aug 10:30 AM
+ Done 
+ Paid · Online · ★ You rated 4 ₹550 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ Spec for step 2 · coding
+ Data model (Prisma). On Staff : add experienceYears Int? , speciality String? , skills String[] , plus cached ratingAvg / ratingCount . New Review model (one per completed booking): bookingId (unique), staffId , stars 1–5 , tags String[] , comment? .
+ API. Partner: PATCH /shops/:id/staff/:staffId (experience, speciality, skills). Customer: POST /bookings/:id/review (only when COMPLETED & owner & not already reviewed) → recompute the staff aggregate in the same transaction. Public shop menu returns each stylist's profile + rating.
+ UI. Server: fields on Chairs & team. Client: stylist tabs + profile card on Shop; a "Rate your visit" card on the completed booking detail; the ★ appears on the picker.
+ 08 · Proposed 
+ Online payment — shop-confirmed, auto success
+ Replaces the abusable “I've paid” self-confirm. The customer pays the saloon's UPI directly; the saloon confirms receipt (they're the one who sees the money land); the customer's screen polls and flips to a Payment Successful page on its own . No payment gateway, works in production. Design for review — not built yet. 
+ Complete flow — every status, both sides
+ Each step shows the exact partner screen and the matching customer screen, and what the booking's payment status is at that moment. “No change” means that side's screen doesn't move on that step.
+ 1 Customer starts online payment ONLINE · UNPAID 
+ Customer taps Pay online → the QR + Open UPI app appear and the screen begins polling. The booking is flagged to be paid online, still unpaid.
+ Partner Awaiting (A) 
+ 11:00 · Chair 1 Sam · Haircut
+ ₹300 💳 Paying online
+ Confirm ₹300 received Not received yet 
+ Customer Pay by UPI 
+ Pay by UPI ₹300 
+ QR shown Open UPI app 
+ Waiting for Demo Cuts to confirm… 
+ customer pays in their UPI app (external) 
+ 2 Money reaches the saloon's UPI ONLINE · UNPAID 
+ The transfer lands in the saloon's UPI app. Snipbook isn't in that loop, so nothing changes automatically — the customer keeps waiting until the saloon confirms.
+ Partner Awaiting (A) 
+ 11:00 · Chair 1 Sam · Haircut
+ ₹300 💳 Paying online
+ ✅ ₹300 just landed in your UPI app? Confirm it below.
+ Confirm ₹300 received Not received yet 
+ Customer No change · still waiting 
+ Pay by UPI ₹300 
+ Paid in your app — waiting for Demo Cuts to confirm… 
+ saloon taps “Confirm ₹300 received” 
+ 3 Saloon confirms — step 1 of 2 ONLINE · UNPAID 
+ Tapping Confirm ₹300 received opens a confirm step (B). Nothing is committed yet — Cancel returns to A. The customer's screen is still unchanged.
+ Partner Confirm step (B) 
+ Confirm you received ₹300? 
+ You're confirming ₹300 landed in your UPI app. The customer will immediately see it as paid .
+ Cancel Yes, mark as paid 
+ Customer No change · still waiting 
+ Pay by UPI ₹300 
+ Waiting for Demo Cuts to confirm… 
+ saloon taps “Yes, mark as paid” 
+ 4 Paid — customer auto-updates PAID ✓ 
+ The booking flips to PAID (records the time). On its next poll (~3s) the customer's screen becomes Payment successful on its own — no tap. The partner row shows Paid, with a short-lived Undo.
+ Partner Paid (D) 
+ 11:00 · Chair 1 Sam · Haircut
+ Paid ✓ Online · 11:04 AM
+ Confirmed by mistake? Undo — mark unpaid 
+ Customer Payment successful 
+ ✓
+ Payment successful 
+ ₹300 · UPI · confirmed by Demo Cuts
+ — branches & recovery —
+ 3b Alternate: “Not received yet” stays UNPAID 
+ If the saloon can't see the money, they tap Not received yet → a confirm step (C) → Yes, keep waiting returns to A. Nothing is charged or cancelled; the customer keeps waiting and, after a while, sees a gentle “taking longer” nudge.
+ Partner Not-received step (C) 
+ Mark payment as not received? 
+ Nothing is charged or cancelled — the customer keeps waiting ; you can confirm later.
+ Cancel Yes, keep waiting 
+ Customer Waiting · taking longer 
+ Still waiting for Demo Cuts… 
+ Taking longer than usual. If you've paid, it'll confirm shortly — safe to close, it stays paid in My bookings.
+ only within ~10 min of “Yes, mark as paid” 
+ R Recovery: confirmed by mistake PAID → UNPAID 
+ If they confirmed but the money never arrived, Undo — mark unpaid (grace window) reverts to A. The customer's receipt flips back to Reopened with “don't pay again.” After the window, or once serviced, use Refund instead.
+ Partner Back to Awaiting (A) 
+ 11:00 · Chair 1 Sam · Haircut
+ ₹300 💳 Paying online
+ Confirm ₹300 received Not received yet 
+ Customer Reopened (E) 
+ Payment Reopened 
+ If you've already paid, don't pay again — message the saloon via 💬. Otherwise tap Show QR to pay.
+ 1 Pay by UPI — pay, then wait (auto-updates) 
+ Snipbook PN 
+ ‹ My bookings 💬 
+ Demo Cuts
+ Today · 11:00 AM · Sam
+ Pay by UPI Close 
+ Scan with any UPI app
+ Pay to Demo Cuts 
+ UPI ID democuts@okaxis 
+ Amount ₹300 
+ Open UPI app 
+ Waiting for Demo Cuts to confirm your payment… this updates on its own. 
+ Already paid? You're done — nothing more to tap. Your money goes straight to the saloon's UPI; they'll confirm it and this screen turns into your receipt automatically. It's safe to leave this open.
+ Pay cash instead 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ 1b Waiting · taking longer — time-based nudge, never a false failure 
+ Snipbook PN 
+ ‹ My bookings 💬 
+ Demo Cuts
+ Today · 11:00 AM · Sam
+ Payment Awaiting confirmation Close 
+ Still waiting for Demo Cuts to confirm… 
+ Taking a little longer than usual. If you've already paid, you don't need to do anything — it'll show as paid the moment the saloon confirms. You can safely close this and check My bookings later.
+ 💬 Message the saloon 
+ Show QR again 
+ Pay cash instead 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ 2 Payment successful — appears automatically on confirm 
+ Snipbook PN 
+ ✓
+ Payment successful
+ ₹300 paid to Demo Cuts
+ Amount ₹300 
+ Method UPI · Online 
+ Stylist · Time Sam · 11:00 AM 
+ Confirmed by saloon Today, 11:04 AM 
+ ✓ Demo Cuts confirmed your payment
+ Back to booking 
+ 🔍 Explore 📅 Bookings 👤 Profile 
+ 3 Saloon confirms receipt — partner dashboard / schedule 
+ Partner RK 
+ Demo Cuts 
+ Today's schedule
+ Indiranagar · Today
+ Schedule 
+ 11:00 AM · Chair 1 Sam · Haircut
+ Accepted ₹300
+ 💳 Paying online
+ Customer is paying ₹300 by UPI to your account. Check your UPI app and confirm the amount matches.
+ Confirm ₹300 received Not received yet 
+ Either button asks you to confirm first — until you confirm receipt, the customer just keeps waiting and nothing is charged or cancelled.
+ 10:00 AM · Chair 2 Priya · Hair colour
+ Done ₹1,200
+ Paid · Online
+ ◱ Dashboard 💰 Earnings 👤 Profile 
+ Every action is a two-step confirm (Undo → back to A)
+ From A , tapping either button opens a short confirm step. Undo there returns you to A with nothing changed; proceeding applies it. So no single accidental tap ever commits — and even a committed confirm can be undone for a grace window (then Refund takes over).
+ A Awaiting — both actions 
+ 11:00 AM · Chair 1 Sam · Haircut
+ Accepted ₹300
+ 💳 Paying online
+ Customer is paying ₹300 by UPI. Check your app and confirm the amount matches.
+ Confirm ₹300 received Not received yet 
+ B Tapped “Confirm” — Cancel → back to A 
+ Confirm you received ₹300? 
+ You're confirming ₹300 has landed in your UPI app. The customer will immediately see the payment as successful .
+ Cancel Yes, mark as paid 
+ Cancel → back to A, nothing changed.
+ C Tapped “Not received yet” — Cancel → back to A 
+ Mark payment as not received? 
+ Nothing is charged or cancelled — the customer simply keeps waiting , and this booking stays awaiting so you can confirm later.
+ Cancel Yes, keep waiting 
+ Cancel → back to A, nothing changed.
+ D After “Yes, confirm” — Paid · Undo 10 min → A 
+ 11:00 AM · Chair 1 Sam · Haircut
+ Paid ✓ ₹300
+ Online · confirmed 11:04 AM
+ Confirmed by mistake? Undo — mark unpaid 
+ Reverts to A for 10 min . After that, use Refund if money needs returning.
+ E Customer, if undone — receipt reverts 
+ Payment Reopened 
+ The saloon reopened this payment. If you've already paid, don't pay again — message them via 💬. Otherwise tap below to pay.
+ 💬 Message saloon Show QR 
+ How it works (for review)
+ Customer. Taps Pay online → sees the QR / Open UPI app → the sheet enters a “Waiting for the saloon to confirm…” state that polls every few seconds. The old “I've paid” button is gone.
+ The UPI link is pre-filled. Open UPI app / the QR carry the shop's VPA , payee name and amount (and a booking-ref note so the shop can match it), so the customer just enters their UPI PIN. On a personal VPA the amount can technically be edited, which is why the shop verifies it.
+ Saloon confirms. The booking shows 💳 Paying online with Confirm ₹300 received — the shop checks their UPI app, verifies the amount, and taps it. That's the source of truth, so the customer can't fake it. “Not received yet” keeps the customer waiting and changes nothing.
+ Auto success. The customer's next poll sees PAID → the screen flips to Payment successful on its own (also reflected in My bookings). The customer never self-confirms.
+ Stuck / slow. After a short wait the customer sees a time-based “taking longer” nudge (never triggered by the shop, so no false failures) with Message the saloon , Show QR again , and Pay cash instead . Closing the screen is safe — it still confirms in the background.
+ Two-step confirm (A → step → A). From A , tapping either button opens a confirm step; Cancel returns to A unchanged, so no single tap ever commits. Proceeding on “Confirm” marks it Paid (state D), which still offers Undo → A for ~10 min in case it was wrong (the customer's receipt flips back with a “reopened — don't pay again” note). Past the window or after the service, the existing Refund handles money that truly needs returning.
+ Later, a real PSP (Razorpay/Cashfree) can replace the shop-confirm step with an automatic webhook — same screens, the “Confirm” tap just becomes automatic. The flow is built so that swap is additive.
+ Snipbook — design system & screen gallery · reconstructed from packages/ui 
+ 

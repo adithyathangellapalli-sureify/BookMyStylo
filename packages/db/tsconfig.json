@@ -1,0 +1,1 @@
+{ "extends": "@bookmystylo/tsconfig/node.json", "include": ["src", "prisma"] }

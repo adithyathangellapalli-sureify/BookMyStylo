@@ -1,0 +1,29 @@
+/* app-local classes (customer app) — everything else comes from @bookmystylo/ui/design.css */
+.icon-btn{ width:34px; height:34px; border-radius:50%; border:1px solid var(--line); background:var(--surface-2); display:inline-flex; align-items:center; justify-content:center; font-size:17px; cursor:pointer; flex:none; }
+.icon-btn:hover{ border-color:var(--accent); }
+.qrbox{ display:flex; justify-content:center; background:#fff; border:1px solid var(--line); border-radius:12px; padding:14px; }
+.app{ min-height:100vh; display:flex; flex-direction:column; padding-bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px)); }
+.tabbar{ padding-bottom:env(safe-area-inset-bottom, 0px); }
+.bookbar{ bottom:calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px)); }
+.has-bookbar{ padding-bottom:84px; }
+.day-row{ display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; }
+.day-row .sel{ flex:0 0 auto; }
+.svc-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; padding:10px 0; border-bottom:1px solid var(--line); }
+.svc-row:last-child{ border-bottom:0; }
+.back{ display:inline-flex; align-items:center; gap:6px; color:var(--ink-2); font-weight:700; font-size:13px; text-decoration:none; background:none; border:0; cursor:pointer; padding:0; font-family:var(--sans); }
+.back:hover{ color:var(--accent); }
+.stars{ display:flex; gap:6px; }
+.stars button{ background:none; border:0; font-size:30px; cursor:pointer; color:var(--line); padding:0; line-height:1; }
+.stars button.on{ color:var(--leave); }
+.sheet-backdrop{ position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:30; display:flex; align-items:flex-end; justify-content:center; }
+.sheet{ width:100%; max-width:720px; background:var(--surface); border-radius:18px 18px 0 0; padding:16px 18px calc(22px + env(safe-area-inset-bottom,0px)); max-height:92vh; overflow-y:auto; box-shadow:var(--shadow-lg); }
+.success-hero{ text-align:center; padding:28px 0 10px; }
+.success-hero .ring{ width:64px; height:64px; border-radius:50%; background:var(--available-soft); color:var(--available); display:inline-flex; align-items:center; justify-content:center; font-size:30px; font-weight:800; margin-bottom:12px; }
+.kv{ display:flex; justify-content:space-between; gap:12px; padding:8px 0; border-bottom:1px solid var(--line); font-size:13.5px; }
+.kv:last-child{ border-bottom:0; }
+.kv .k{ color:var(--ink-2); }
+.kv .v{ font-weight:700; text-align:right; }
+.textarea{ background:var(--surface-2); border:1px solid var(--line); border-radius:11px; padding:12px 13px; font-size:14px; color:var(--ink); width:100%; outline:none; font-family:var(--sans); min-height:72px; resize:vertical; }
+.textarea:focus{ border-color:var(--accent); box-shadow:0 0 0 3px var(--accent-soft); }
+.chat-input{ display:flex; gap:8px; margin-top:10px; }
+.chat-input .input{ flex:1; }

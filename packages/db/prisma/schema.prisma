@@ -1,0 +1,249 @@
+// BookMyStylo data model.
+// SQLite for local dev (zero setup). Swap the datasource provider to "postgresql"
+// for production — no model changes needed except String[] columns, which are
+// stored here as comma-separated strings (see packages/shared csv helpers).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ---------------------------------------------------------------- identity
+
+// role: CUSTOMER | PARTNER | SUPER_ADMIN
+model User {
+  id        String   @id @default(cuid())
+  phone     String   @unique
+  name      String
+  role      String   @default("CUSTOMER")
+  createdAt DateTime @default(now())
+
+  staff    Staff?
+  bookings Booking[]
+  holds    Hold[]
+  reviews  Review[]
+  tickets  Ticket[]
+}
+
+model OtpCode {
+  id        String   @id @default(cuid())
+  phone     String
+  code      String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([phone])
+}
+
+// ---------------------------------------------------------------- catalog
+
+model Locality {
+  id    String @id @default(cuid())
+  name  String
+  city  String
+  state String
+  shops Shop[]
+
+  @@unique([name, city])
+}
+
+model Service {
+  id     String  @id @default(cuid())
+  name   String  @unique
+  active Boolean @default(true)
+
+  shopServices ShopService[]
+}
+
+// ---------------------------------------------------------------- shops
+
+// status: PENDING | LIVE | SUSPENDED
+model Shop {
+  id            String   @id @default(cuid())
+  name          String
+  localityId    String
+  locality      Locality @relation(fields: [localityId], references: [id])
+  status        String   @default("PENDING")
+  autoApprove   Boolean  @default(false)
+  upiId         String?
+  acceptsCash   Boolean  @default(true)
+  opensAt       String   @default("09:00")
+  closesAt      String   @default("20:00")
+  slotMinutes   Int      @default(30)
+  weeklyDaysOff String   @default("0") // csv of weekday numbers, 0 = Sunday
+  createdAt     DateTime @default(now())
+
+  chairs   Chair[]
+  staff    Staff[]
+  services ShopService[]
+  holidays Holiday[]
+  holds    Hold[]
+  bookings Booking[]
+}
+
+model ShopService {
+  id        String  @id @default(cuid())
+  shopId    String
+  shop      Shop    @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  serviceId String
+  service   Service @relation(fields: [serviceId], references: [id])
+  price     Int
+
+  @@unique([shopId, serviceId])
+}
+
+model Chair {
+  id      String  @id @default(cuid())
+  shopId  String
+  shop    Shop    @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  label   String
+  staffId String? @unique
+  staff   Staff?  @relation(fields: [staffId], references: [id])
+
+  holds    Hold[]
+  bookings Booking[]
+}
+
+model Staff {
+  id              String  @id @default(cuid())
+  userId          String  @unique
+  user            User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  shopId          String
+  shop            Shop    @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  isAdmin         Boolean @default(false)
+  experienceYears Int?
+  speciality      String?
+  skills          String  @default("") // csv
+  ratingAvg       Float   @default(0)
+  ratingCount     Int     @default(0)
+
+  chair    Chair?
+  leaves   Leave[]
+  holds    Hold[]
+  bookings Booking[]
+  reviews  Review[]
+}
+
+model Holiday {
+  id     String @id @default(cuid())
+  shopId String
+  shop   Shop   @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  date   String // YYYY-MM-DD
+
+  @@unique([shopId, date])
+}
+
+model Leave {
+  id      String @id @default(cuid())
+  staffId String
+  staff   Staff  @relation(fields: [staffId], references: [id], onDelete: Cascade)
+  from    String // YYYY-MM-DD
+  to      String // YYYY-MM-DD
+}
+
+// ---------------------------------------------------------------- booking
+
+// A slot held for a customer while they finish the request (5 minutes).
+model Hold {
+  id         String   @id @default(cuid())
+  shopId     String
+  shop       Shop     @relation(fields: [shopId], references: [id], onDelete: Cascade)
+  chairId    String
+  chair      Chair    @relation(fields: [chairId], references: [id], onDelete: Cascade)
+  staffId    String
+  staff      Staff    @relation(fields: [staffId], references: [id], onDelete: Cascade)
+  customerId String
+  customer   User     @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  date       String
+  startTime  String // HH:mm
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+
+  @@index([shopId, date])
+}
+
+// status:        PENDING | ACCEPTED | IN_SERVICE | COMPLETED | REJECTED | CANCELLED | NO_SHOW
+// paymentMethod: CASH | ONLINE
+// paymentStatus: UNPAID | PAID | REFUNDED
+model Booking {
+  id            String    @id @default(cuid())
+  shopId        String
+  shop          Shop      @relation(fields: [shopId], references: [id])
+  customerId    String
+  customer      User      @relation(fields: [customerId], references: [id])
+  chairId       String
+  chair         Chair     @relation(fields: [chairId], references: [id])
+  staffId       String
+  staff         Staff     @relation(fields: [staffId], references: [id])
+  date          String
+  startTime     String
+  endTime       String
+  status        String    @default("PENDING")
+  amount        Int
+  paymentMethod String    @default("CASH")
+  paymentStatus String    @default("UNPAID")
+  paidAt        DateTime?
+  paidVia       String? // "CASH" | "UPI_CONFIRMED" | "ADMIN"
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  services BookingService[]
+  review   Review?
+  tickets  Ticket[]
+
+  @@index([shopId, date])
+  @@index([customerId])
+}
+
+model BookingService {
+  id        String  @id @default(cuid())
+  bookingId String
+  booking   Booking @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  name      String
+  price     Int
+}
+
+model Review {
+  id         String   @id @default(cuid())
+  bookingId  String   @unique
+  booking    Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  staffId    String
+  staff      Staff    @relation(fields: [staffId], references: [id], onDelete: Cascade)
+  customerId String
+  customer   User     @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  stars      Int
+  tags       String   @default("") // csv
+  comment    String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+// ---------------------------------------------------------------- support
+
+// status: OPEN | RESOLVED
+model Ticket {
+  id         String   @id @default(cuid())
+  customerId String
+  customer   User     @relation(fields: [customerId], references: [id], onDelete: Cascade)
+  bookingId  String?
+  booking    Booking? @relation(fields: [bookingId], references: [id])
+  status     String   @default("OPEN")
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  messages TicketMessage[]
+}
+
+// sender: CUSTOMER | ADMIN
+model TicketMessage {
+  id        String   @id @default(cuid())
+  ticketId  String
+  ticket    Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  sender    String
+  body      String
+  createdAt DateTime @default(now())
+}

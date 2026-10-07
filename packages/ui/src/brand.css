@@ -1,0 +1,54 @@
+/* ============================================================================
+   BOOKMYSTYLO BRAND LAYER — naming board, Direction A "the mirror"
+   Brass accent on a cool slate ground. Overrides only the accent + neutral
+   tokens of design.css; semantic slot colours stay as shipped.
+   ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600;6..96,700&family=DM+Mono:wght@400;500&display=swap");
+
+:root{
+  --ground:#f3f4f6; --surface:#ffffff; --surface-2:#e9ecef;
+  --ink:#141a1f; --ink-2:#4b5560; --ink-3:#7d8893; --line:#d9dee3;
+  --accent:#a9781f; --accent-2:#c5952e; --accent-soft:#f3e7cb;
+  --brand-display:"Bodoni Moda",Georgia,"Times New Roman",serif;
+  --brand-mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --serif:"Bodoni Moda",Georgia,"Times New Roman",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0f1317; --surface:#171c22; --surface-2:#1f262e;
+    --ink:#eef1f4; --ink-2:#aab4bf; --ink-3:#7c8793; --line:#2a323b;
+    --accent:#d4a43a; --accent-2:#e4bb5c; --accent-soft:#3a2f12;
+  }
+}
+:root[data-theme="light"]{
+  --ground:#f3f4f6; --surface:#ffffff; --surface-2:#e9ecef;
+  --ink:#141a1f; --ink-2:#4b5560; --ink-3:#7d8893; --line:#d9dee3;
+  --accent:#a9781f; --accent-2:#c5952e; --accent-soft:#f3e7cb;
+}
+:root[data-theme="dark"]{
+  --ground:#0f1317; --surface:#171c22; --surface-2:#1f262e;
+  --ink:#eef1f4; --ink-2:#aab4bf; --ink-3:#7c8793; --line:#2a323b;
+  --accent:#d4a43a; --accent-2:#e4bb5c; --accent-soft:#3a2f12;
+}
+
+/* solid-accent text colour: brass is mid-luminance, so dark ink reads better on it in both themes */
+.btn:not(.ghost):not(.danger):not(.dark){ color:#1a1304; }
+:root[data-theme="dark"] .btn:not(.ghost):not(.danger):not(.dark){ color:#1a1304; }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .btn:not(.ghost):not(.danger):not(.dark){ color:#1a1304; } }
+.slot.selected, .seg button.on, .stepnum, .optbadge{ color:#1a1304 !important; }
+.lane-pill.selected{ color:#1a1304 !important; }
+
+/* ---- the wordmark: mono "BOOK MY" kicker over Bodoni "STYL◯" with the mirror as the O ---- */
+.brandmark{ font-family:var(--brand-display); font-weight:600; letter-spacing:.1em; text-transform:uppercase; gap:0; align-items:flex-end; line-height:1; }
+.brandmark .bm-kicker{ display:block; font-family:var(--brand-mono); font-weight:500; font-size:.42em; letter-spacing:.22em; color:var(--ink-2); margin-bottom:.18em; text-transform:uppercase; }
+.brandmark .bm-word{ display:inline-flex; align-items:center; }
+.brandmark .bm-word svg{ width:.82em; height:.82em; margin-left:.05em; color:var(--accent); flex:none; }
+.brandmark .bm-stack{ display:flex; flex-direction:column; }
+.brandmark.compact .bm-kicker{ display:none; }
+.brandmark .bm-suffix{ font-family:var(--sans); font-weight:700; font-size:.5em; letter-spacing:.06em; text-transform:none; color:var(--ink-3); margin-left:.6em; align-self:center; }
+/* the old striped barber pole is retired; keep the class harmless if referenced */
+.pole{ display:none; }
+
+/* app icon tile (login cards) */
+.brand-tile{ width:56px; height:56px; border-radius:16px; background:var(--accent); display:inline-flex; align-items:center; justify-content:center; box-shadow:0 6px 16px color-mix(in srgb,var(--accent) 35%,transparent); }
+.brand-tile svg{ width:34px; height:34px; color:#fff8e6; }

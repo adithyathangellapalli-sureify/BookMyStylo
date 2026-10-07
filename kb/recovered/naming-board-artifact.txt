@@ -1,0 +1,450 @@
+ 
+ Renaming Snipbook 
+ Naming board · Snipbook rebrand
+ Seven names, one decision,
+four marks to choose from.
+ Snipbook works, but it spends its whole name on scissors — and the product is
+ already bigger than that: a locality-first salon booking network where a customer picks a
+ chair and a slot , and a shop runs its day from the partner app. Seven
+ candidates below, each buying something different with the rename — then the four mark
+ directions for the name that won.
+ Snipbook 
+ Retiring 
+ What the name has to carry
+ Two apps, one family. A customer app and a partner app for shop owners, off one
+ wordmark.
+ Locality is the product. Discovery is by city and neighbourhood, not by brand.
+ Chair + slot is the unit. Not "appointment" — a specific chair, held for minutes.
+ Not barbers only. Unisex salons, threading, colour, kids' cuts.
+ Constraints I designed against
+ Sayable over a phone call in Hindi or English, first try, no spelling it out.
+ Nine characters or fewer — it sits in a 60px app bar next to a back arrow.
+ One mark, three sizes: 20px favicon, app icon, shop signage sticker.
+ No caste-linked words. "Nai" and its variants are off the table for this reason.
+ Where this landed
+ BookMyStylo 
+ This is the pick — four mark
+ directions for it are further down the page. It keeps the stylist-first promise and fixes
+ the appliance problem "Styler" had. Two things still stand from the naming work: my own
+ recommendation was Chairly , and the case for it is still in the
+ first row; and the BookMy prefix is the one piece I'd still get
+ cleared by a lawyer. So every direction below is drawn to work with the prefix deleted — if
+ you ever ship as plain Stylo , no mark gets redrawn.
+ Chairly 
+ Chairly for Salons 
+ 20px · one colour 
+ Recommended 
+ The inventory word 
+ Chair + -ly. The chair is the bookable unit in your schema — chairs,
+ holds, slots. The name says the model out loud.
+ This is the only candidate that describes what a customer receives without
+ naming a service, so it never boxes you in: today it's a fade, next year it's a keratin
+ treatment or a nail station, and the name doesn't strain. It reads as a platform to shop
+ owners — which is who you need to sign — and the mark is a barber chair in profile that still
+ resolves at 20px, because it's four rectangles.
+ Book the chair, not the queue.
+ Chair 2 at Sharma Hair Studio is held for you until 6:12 pm.
+ Wordmark
+ Chivo 600 , tracking −0.028em. Squared terminals sit flush against the mark.
+ Mark
+ Chair in profile — backrest, seat, pedestal, base, at 55%/38% opacity for depth.
+ Palette
+ Keeps your teal. #1c8a79 is a half-step deeper than the shipped #0d9488 — no reskin needed.
+ Partner app
+ Chairly for Salons — avoids "Partner", which shop owners read as jargon.
+ Watch out: the -ly suffix is crowded (Calendly, Fastly, Bevy)
+ and reads faintly SaaS. Check for furniture and co-working use of "Chairly" before you file.
+ Kesh 
+ Kesh Studio 
+ 20px · thin curve drops out — use the heavy cut 
+ Alternative — premium 
+ The Sanskrit root 
+ केश — hair. Sanskrit, and legible across Hindi, Marathi, Gujarati and
+ Bengali. Four letters, one syllable, no spelling required on a phone call.
+ This is the most grown-up name on the board and the only one that reads
+ salon rather than barbershop — which matters, because women's salons carry
+ higher ticket sizes and are the harder side of the marketplace to win. Set in Bodoni with
+ wide tracking it looks like a brand a good salon would put on its own glass door, which is
+ exactly the co-branding you want from partners.
+ Every kind of hair, every kind of hour.
+ Kesh · Your 5:30 with Anjali at Kanaka Studio is confirmed.
+ Wordmark
+ Bodoni Moda 500 , uppercase, tracking +0.11em. High-contrast strokes read as beauty-editorial.
+ Mark
+ A lock of hair as two nested curves — the second at 42% is decoration and drops at small sizes.
+ Palette
+ New palette. Indigo #5a46c8 on porcelain; the teal would fight the didone.
+ Partner app
+ Kesh Studio — the shop-side tool, named like equipment.
+ Read this before you commit: kesh is also one of the Five
+ Ks in Sikhism — uncut hair kept as a religious article of faith. A haircut-booking brand
+ named Kesh can land badly with Sikh customers and partners, particularly in Punjab and
+ Delhi. It is not a blocker everywhere, but it is a real reputational risk that a founder
+ should decide on deliberately rather than discover in a review. Keshya or
+ Keshi soften the direct reference if you like the sound but not the exposure.
+ Gullycut 
+ Gullycut Shop 
+ 20px · drop the dashes, keep three shapes 
+ Alternative — vernacular 
+ The locality play 
+ Gully + cut. Gully is the lane your shop is actually on — the
+ unit of geography people navigate by, and the one your discovery flow is built around.
+ Of the six, this is the name people repeat without being asked twice, and it
+ claims the thing competitors can't: hyperlocal. Urban Company sells you a technician who
+ travels; Gullycut sells you the chair four doors down that's free at 7. The mark is a lane in
+ perspective with the shop as the destination dot — it is a map pin without drawing a map pin.
+ Every gully has a good chair.
+ 3 shops open near you in Kothrud right now. Nearest is a 4-minute walk.
+ Wordmark
+ Archivo Black , uppercase, tracking −0.035em. Street-signage weight, set tight.
+ Mark
+ Two kerb lines converging on a shop dot; the dashed centre line is the only detail that scales away.
+ Palette
+ New palette. Signboard green #2f7d32 — municipal, local, deliberately not tech-teal.
+ Partner app
+ Gullycut Shop — one syllable, and it's what owners already call the place.
+ Watch out: it skews male, young and street — the Gully Boy 
+ association is doing real work here, and it works against you when you pitch a premium unisex
+ salon in Bandra. It also travels poorly outside Hindi-speaking metros. If you go this way,
+ expect to launch a second brand for the premium tier later.
+ Kursi 
+ Kursi Dukaan 
+ 20px · back and seat only 
+ Shortlist 
+ The inventory word, in Hindi 
+ कुर्सी — chair. Chairly's logic in the customer's own language: two
+ syllables, spelled the way it sounds, warm rather than corporate.
+ Where Chairly sounds like a platform, Kursi sounds like a place — and for a
+ product whose whole promise is the shop around the corner, that's not a small difference.
+ The mark takes the chair head-on and puts three slot markers under the seat, one filled: the
+ booking model in a favicon.
+ Pick a kursi, pick a time.
+ Kursi 1 is free at 7:15 pm — held for 8 minutes.
+ Wordmark
+ Fraunces 600 — a warm, slightly wonky serif; friendlier than Bodoni, more character than a grotesque.
+ Mark
+ Chair head-on with three slot chips; one solid marks the booked slot.
+ Palette
+ New palette. Marigold #b26a10 against cool slate — the one warm brand on this board.
+ Partner app
+ Kursi Dukaan — vernacular all the way through, or plain "Kursi for Shops" if that reads too regional.
+ Watch out: kursi carries a political second meaning — the seat
+ of power, as in kursi ki ladai — which makes headline copy hard to control. And it
+ doesn't travel south: Tamil and Telugu speakers won't read it as "chair" at all.
+ fadely 
+ fadely Chairside 
+ 20px · three bars, no opacity ramp 
+ Shortlist 
+ The craft term 
+ Fade + -ly. The fade is the signature cut of modern barbering, and the
+ clipper-guard ramp is its most recognisable visual — six bars, short to long.
+ The strongest mark on the board: geometric, self-explanatory to anyone
+ who has sat in a barber's chair, and the only one whose small-size version loses nothing.
+ Chrome-grey suits it, because a fade is a grayscale idea. Pick this if the near-term wedge is
+ young men in metros and you want a brand that looks like a good barbershop's Instagram.
+ Fresh cut, on schedule.
+ Your 6:00 fade with Imran is confirmed. Chair 3.
+ Wordmark
+ DM Mono 500 , lowercase. Technical and quiet, so the mark carries the identity.
+ Mark
+ Clipper-guard ramp, six bars with a descending opacity ramp — the fade itself.
+ Palette
+ New palette. Chrome #64707d on near-black; the calmest option here, and the least distinctive.
+ Partner app
+ fadely Chairside — the tool the barber uses between clients.
+ Watch out: this is the narrowest name on the board. "Fade" is men's
+ barbering, so half your addressable salons don't see themselves in it, and recognition of the
+ word outside metros is low. It also caps you at grooming — no spa, no nails.
+ Barbook 
+ Barbook Counter 
+ 20px · pole segments only, pages vanish 
+ Shortlist 
+ The descriptive 
+ Barber + book. Zero explanation needed, in any market. What it is, on
+ the label.
+ Worth keeping on the board because a descriptive name buys cheap discovery:
+ people search what they want, and an unbranded market rewards the literal. The mark solves the
+ barber-pole cliché honestly — the pole's stripes become the spine segments of an open book, so
+ one shape says both halves of the name.
+ Barbers, booked.
+ Booking requested at Royal Hair Cutting. The shop will confirm shortly.
+ Wordmark
+ Chivo 900 , tracking −0.035em. The two b-bowls nearly touch, which is the only wit in it.
+ Mark
+ Open book with a segmented barber-pole spine; the pages are 30% and drop away small.
+ Palette
+ New palette. Pole red #c02b45 — traditional, and the loudest choice on the board.
+ Partner app
+ Barbook Counter — the front desk.
+ Watch out: it reads as "bar book" on first glance, it is trademark-weak
+ precisely because it's descriptive, and it hard-codes barber into a product you're
+ selling to unisex salons. Of the six, this is the one most likely to need renaming again in
+ two years.
+ Book my 
+ Styler 
+ Book my Styler for Salons 
+ 20px · mark survives, the name can't come with it 
+ The repair — same idea, ownable 
+ Stylo 
+ Your suggestion — not recommended as written 
+ The stylist-first play 
+ Book + my + styler. A whole sentence as a name, in the
+ BookMyShow / MakeMyTrip grammar Indian users already know.
+ The instinct behind it is the best one on this
+ board. Every other name here books a chair ; this one books a person — and
+ you have already shipped the feature that makes that true: stylist profiles, the stylist
+ picker, customer reviews. Stylist-first is a genuinely stronger promise than chair-first,
+ because a returning customer wants Imran on Saturday, not seat two. StyleSeat built a US
+ business on exactly that claim. So the strategy is right. It's the three words that don't
+ survive contact.
+ Book my Styler
+ Imran has 3 slots open on Saturday. You've booked him twice before.
+ Wordmark
+ Chivo 900 under a mono kicker — stacking "BOOK MY" above "Styler" is the only way a three-word name holds together as a lockup.
+ Mark
+ A stylist inside a bookmark: head and shoulders over a ribbon that notches into a slot. Legible at 20px.
+ Palette
+ New palette. Deliberate blue #1f6fb2 — distance from BookMyShow's red is a legal precaution, not a taste one.
+ Partner app
+ Book my Styler for Salons — now five words on a login screen.
+ Three problems, in order of seriousness. 
+ One — the "BookMy" prefix is owned territory in India. BookMyShow is the dominant
+ mark in that formation and its owner has a track record of challenging
+ BookMy… names; a lawyer's clearance opinion here is not optional, and the answer may
+ well be no.
+ Two — a "styler" is an appliance, not a person. The person is a
+ stylist ; "styler" is how Dyson and Philips label hot-air tools, so you would compete
+ for that phrase against appliance shopping in every search and ad auction.
+ Three — it is fourteen characters and three words. A home-screen icon label truncates
+ around eleven, so it ships as "BookMySty…" on real phones, and your 60px app bar can't hold
+ it beside a back arrow.
+ Keep the strategy, change the string
+ Stylo — five characters, stylist-first, and it already means "stylish" in everyday
+ Indian English, so it carries the aspiration for free. Same mark, same promise, none of the
+ three problems. Styla and Stylr are the same move if Stylo is taken; check
+ footwear and stationery classes, where "Stylo" has prior use.
+ If you'd rather keep the sentence, BookMyStylist at least fixes the grammar — but it
+ makes the trademark exposure worse, not better, and adds a character.
+ Side by side
+ What each name costs you.
+ Name
+ Chars
+ Says it once, over a phone
+ Scales past haircuts
+ Collision & TM risk
+ Keeps shipped teal
+ Chairly
+ 7
+ Yes
+ Fully — names the unit, not the service
+ Crowded -ly space
+ Yes
+ Kesh
+ 4
+ Yes, in Hindi belt
+ Hair only, but all of hair
+ Religious sensitivity
+ No — indigo
+ Gullycut
+ 8
+ Yes, and it sticks
+ Caps at street-tier grooming
+ Low — distinctive
+ No — signboard green
+ Kursi
+ 5
+ North yes, south no
+ Fully
+ Political second meaning
+ No — marigold
+ Fadely
+ 6
+ Metro yes, tier-2 no
+ Men's barbering only
+ Crowded -ly space
+ No — chrome
+ Barbook
+ 7
+ Heard as "bar book"
+ Barbers, by name
+ Descriptive — weak mark
+ No — pole red
+ Book my Styler
+ 14
+ Yes — familiar grammar
+ Fully — books a person, not a service
+ "BookMy" is owned territory
+ No — blue, for legal distance
+ Stylo — the repair 
+ 5
+ Yes, and it flatters
+ Fully — stylist-first
+ Prior use in other classes
+ Workable either way
+ One honest note on the incumbent: Snipbook
+ is not a bad name. If the rename doesn't buy you something specific — room to grow past
+ barbering, or recall in the neighbourhoods you're actually launching in — the cheapest option on
+ this board is keeping it.
+ The chosen name
+ Four ways to draw BookMyStylo.
+ Why the first mark missed: it was two stock glyphs stacked — a default avatar inside a
+ default bookmark. Nothing in it came from hair, nothing came from your booking mechanic, and it
+ left the actual brand word out of the picture. Fixed below: every direction takes its shape from
+ either a salon object or the slot model, and two of them put the mark inside the word.
+ Two constraints these have to solve. Eleven characters over three words means the
+ lockup has to be stacked or weight-contrasted — one flat line of BookMyStylo at icon
+ size is unreadable. And there is a monogram trap: BMS is already how people abbreviate
+ BookMyShow, and BS is worse, so the only safe short form is a single S .
+ If you want one answer: Direction A. It's the only one where the mark is a
+ letter of the name, which means the icon, the favicon and the wordmark are the same object —
+ and it survives the prefix being dropped.
+ Book my 
+ Styl 
+ BookMyStylo for Salons 
+ 20px · ring and stand hold 
+ Direction A — recommended 
+ The mirror 
+ The O becomes the mirror. Every salon chair in the world faces one,
+ and no competitor owns it — the category is drowning in scissors.
+ This is the structural idea the first attempt was missing: the mark isn't
+ next to the name, it's a letter of it, so the app icon, the favicon and
+ the wordmark are all the same object. The highlight arc is the only decorative stroke and
+ it's the first thing to drop at small sizes. Brass on slate reads salon-premium rather than
+ marketplace-cheap, which matters when the mark has to sit on a partner shop's own glass
+ door next to their name.
+ Every good chair faces one.
+ Imran's chair is free at 6:30. Two seats from the window.
+ Wordmark
+ Bodoni Moda 600 , caps, tracking +0.1em, under a mono "Book my" kicker at 0.22em.
+ Mark
+ Mirror on a stand — a stroked ring, one highlight arc, one stem. Three shapes.
+ Palette
+ Brass #a9781f on the cool slate ground. Warm metal, not tech-teal.
+ Drop the prefix
+ Works untouched — "STYL◯" is already the whole logo.
+ Watch out: a stroked ring is the most common shape in software, so the
+ mirror only reads as a mirror because of the stand and the highlight — don't let a
+ developer simplify those away. Bodoni's thin strokes also need a minimum size; below 14px
+ the wordmark needs the heavier optical cut.
+ bookmy Stylo 
+ bookmyStylo Chairside 
+ 20px · three teeth, not four 
+ Direction B 
+ The comb 
+ The one salon tool that isn't scissors. Instantly readable, tilted
+ fourteen degrees so it looks in-use rather than in a display case.
+ The most legible mark of the four and the easiest to hand to a signage
+ printer — four teeth and a spine, no strokes, no gradients, no opacity tricks. It also lets
+ the wordmark carry the hierarchy on one line: bookmy at 300 weight recedes to a
+ prefix, Stylo at 900 becomes the brand, and you can literally delete the light
+ half later. This is the safe, cheerful, high-street answer.
+ Fresh cut, on your calendar.
+ bookmyStylo · Imran confirmed your 6:30. Chair 3, Kothrud.
+ Wordmark
+ Chivo 300 + 900 on one line — the weight break does the work a space would.
+ Mark
+ Comb, tilted −14°. Five solid rectangles; drops to three teeth at 20px.
+ Palette
+ Keeps your teal at #148f80 — the only direction here that needs no reskin of the apps.
+ Drop the prefix
+ Delete the light half of the wordmark. Nothing else changes.
+ Watch out: combs are the second cliché of this category after scissors
+ — you will find one in a dozen salon apps. It's well-made and it's not distinctive.
+ Book my 
+ Stylo 
+ BookMyStylo Studio 
+ 20px · four ticks and the booked one 
+ Direction C 
+ The slot ring 
+ A stylist's day as a dial. Eight slots around one person; the long
+ solid tick is the one you just took.
+ The most product-true mark of the four — it draws the thing your database
+ actually enforces, a single held slot in a stylist's day, and it's the only one that says
+ booking rather than hair . That makes it the best fit if the pitch to shop
+ owners is utilisation and fill-rate rather than style. It also animates for free: the
+ booked tick can sweep into place on a confirmed booking.
+ One slot. Yours.
+ Held for 8 minutes — Imran, 6:30 pm, Saturday.
+ Wordmark
+ Archivo Black caps under a mono kicker — heavy and modern, deliberately unglamorous.
+ Mark
+ Seven ticks at 32% plus one solid, and a centre dot for the stylist.
+ Palette
+ Cobalt #2f5ed0 — the "software" option here, and it reads that way on purpose.
+ Drop the prefix
+ Works untouched — the kicker is a separate line.
+ Watch out: a dotted ring around a dot is close to every loading
+ spinner ever drawn, and at 20px it can read as "please wait". The long booked tick is what
+ saves it — if that gets flattened to match the others, the mark dies.
+ BookMy Stylo 
+ S 
+ S 
+ BookMyStylo for Salons 
+ S 
+ S 
+ 20px · the letter is the mark 
+ Direction D 
+ No mark at all 
+ The name is the logo. One face, two opacities, and a single S 
+ for anywhere the full name won't fit.
+ Worth taking seriously for a name this long: a pictorial mark competing with
+ eleven characters is often what makes a logo feel cluttered, and dropping it lets the
+ prefix fade to 48% so "Stylo" reads as the brand without changing a single letter. Fraunces
+ gives it warmth a grotesque wouldn't — it looks like a salon that chose its own signage.
+ It is also the cheapest to ship: no SVG in the app bar, no icon export set, no printer
+ conversation.
+ BookMyStylo
+ Your Saturday with Imran is confirmed. See you at 6:30.
+ Wordmark
+ Fraunces 600 , tracking −0.018em, prefix at 48% opacity.
+ Mark
+ None. The app icon is a Bodoni S , reversed out of the accent.
+ Palette
+ Rose #b0416a — the most unisex-salon of the four palettes, and the least male-barbershop.
+ Drop the prefix
+ Delete six characters. That's the whole migration.
+ Watch out: a lone letter is weak identity at icon size — an S 
+ in a rose square is forgettable on a crowded home screen, and you'll want a real mark within
+ a year. Choose this only if you want to ship the rename this week and revisit the identity
+ after launch.
+ Once you pick
+ Two things happen next.
+ Clear the name first
+ I can't check any of these from here — no network access in this session — so
+ treat BookMyStylo as unverified until you've run this list.
+ For this name the first item is the gating question rather than a formality: the
+ BookMy prefix is the exposure, and the answer decides whether you ship the prefix or
+ just Stylo .
+ Trademark, class 44 (beauty salon
+ services) and class 42/9 (software) on the IP India register. 
+ Company name availability on the
+ MCA portal, if the brand becomes the entity. 
+ Domain — the .in 
+ matters more than the .com for a locality product. 
+ Play Store and App Store name
+ search — a live app with the name is a harder blocker than a domain. 
+ Instagram and WhatsApp Business 
+ handles — this is where salon partners will find you. 
+ Say it to five shop owners in a
+ launch neighbourhood and ask them to spell it back. 
+ Then the rename in code
+ I measured the blast radius in the repo. It's mechanical, and it's one commit
+ if it's done in one pass.
+ 91 files mention the name, across
+ 253 occurrences — excluding node_modules and the
+ lockfile. 
+ Package scope — every
+ @snipbook/* name in seven workspace packages, plus each import that references
+ them. 
+ User-facing strings — app bars,
+ page titles, OTP message copy, support chat, email-less onboarding text. 
+ The mark itself —
+ .brandmark and .pole in packages/ui/src/design.css 
+ become the new SVG, and the accent tokens change for any name but Chairly. 
+ Docs and ADRs — kb/ 
+ carries the name throughout, including STATE.md and the decision records. 
+ The repo folder and the git
+ remote, whenever you set one up. 
+ Naming board · seven candidates · four mark directions · drawn at 64px 
+ Snipbook → BookMyStylo 
+ 

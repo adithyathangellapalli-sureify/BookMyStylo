@@ -1,0 +1,20 @@
+{
+  "name": "bookmystylo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "BookMyStylo — locality-first salon booking platform (customer app, partner app, super-admin console, API)",
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter ./apps/* dev",
+    "dev:api": "pnpm --filter @bookmystylo/api dev",
+    "dev:client": "pnpm --filter @bookmystylo/client-app dev",
+    "dev:partner": "pnpm --filter @bookmystylo/server-app dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter @bookmystylo/db generate",
+    "db:push": "pnpm --filter @bookmystylo/db push",
+    "db:seed": "pnpm --filter @bookmystylo/db seed",
+    "db:reset": "pnpm --filter @bookmystylo/db reset"
+  },
+  "engines": { "node": ">=18.17", "pnpm": ">=8" },
+  "packageManager": "pnpm@8.15.4"
+}

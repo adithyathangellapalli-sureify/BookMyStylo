@@ -1,0 +1,11 @@
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+.env
+.env.local
+# SQLite database files (regenerate with pnpm db:push && pnpm db:seed)
+packages/db/prisma/*.db
+packages/db/prisma/*.db-journal
+.vite/

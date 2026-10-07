@@ -1,0 +1,1 @@
+{ "extends": "@bookmystylo/tsconfig/react.json", "include": ["src"] }
